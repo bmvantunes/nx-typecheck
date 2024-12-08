@@ -1,11 +1,7 @@
 # nx-typecheck
 
-This library was generated with [Nx](https://nx.dev).
+This currently is a WIP project.
 
-## Building
+Final goal will be to have a proper typechecker for all tsconfig.*.json files in your libraries/apps.
 
-Run `nx build nx-typecheck` to build the library.
-
-## Running unit tests
-
-Run `nx test nx-typecheck` to execute the unit tests via [Jest](https://jestjs.io).
+Currently the vite plugin from the nx team already does typecheck but only for tsconfig.lib.json or tsconfig.app.json files. Our tsconfig.spec.json files will not be typchecked and this plugin plans to bridge that gap, nothing else nothing more.
