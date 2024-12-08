@@ -22,6 +22,7 @@
       }
     }
   ],
+  "nxcloud": "6754b81bc663744591e046dc",
   "targetDefaults": {
     "@nx/js:tsc": {
       "cache": true,
