@@ -1,0 +1,64 @@
+{
+  "name": "nx-typecheck",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "nx-typecheck/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/nx-typecheck",
+        "main": "nx-typecheck/src/index.ts",
+        "tsConfig": "nx-typecheck/tsconfig.lib.json",
+        "assets": [
+          "nx-typecheck/*.md",
+          {
+            "input": "./nx-typecheck/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./nx-typecheck/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./nx-typecheck",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./nx-typecheck",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "nx-typecheck/jest.config.ts"
+      }
+    }
+  }
+}
