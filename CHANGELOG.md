@@ -1,3 +1,13 @@
+## 0.5.0 (2024-12-08)
+
+### 🚀 Features
+
+- **LICENSE:** Remove License ([96375cf](https://github.com/bmvantunes/nx-typecheck/commit/96375cf))
+
+### ❤️ Thank You
+
+- Bruno Antunes @bmvantunes
+
 ## 0.4.0 (2024-12-08)
 
 ### 🚀 Features
