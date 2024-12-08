@@ -44,7 +44,6 @@ async function createNodesInternal(
   const projectRoot = dirname(configFilePath);
   const siblingFiles = readdirSync(join(context.workspaceRoot, projectRoot));
 
-  // Only create typecheck target if it's a valid project
   if (
     !siblingFiles.includes('package.json') &&
     !siblingFiles.includes('project.json')

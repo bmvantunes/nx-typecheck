@@ -1,6 +1,6 @@
 {
   "name": "@nx-typecheck/source",
-  "version": "0.0.2",
+  "version": "verdaccio-release",
   "license": "MIT",
   "scripts": {
     "format": "nx format --all",
