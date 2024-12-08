@@ -1,3 +1,13 @@
+## 0.6.0 (2024-12-08)
+
+### 🚀 Features
+
+- **LICENSE:** Add License to package.json ([f8a8b3c](https://github.com/bmvantunes/nx-typecheck/commit/f8a8b3c))
+
+### ❤️ Thank You
+
+- Bruno Antunes @bmvantunes
+
 ## 0.5.0 (2024-12-08)
 
 ### 🚀 Features
