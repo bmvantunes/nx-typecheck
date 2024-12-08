@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-     "format": "nx format --all",
+    "format": "nx format --all",
     "format:check": "nx format --all --check"
   },
   "private": true,
