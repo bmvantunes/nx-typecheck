@@ -1,3 +1,13 @@
+## 0.4.0 (2024-12-08)
+
+### 🚀 Features
+
+- **docs:** revert README.md ([e2ce819](https://github.com/bmvantunes/nx-typecheck/commit/e2ce819))
+
+### ❤️ Thank You
+
+- Bruno Antunes @bmvantunes
+
 ## 0.3.0 (2024-12-08)
 
 This was a version bump only, there were no code changes.
