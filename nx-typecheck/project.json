@@ -22,7 +22,6 @@
         "tsConfig": "nx-typecheck/tsconfig.lib.json",
         "assets": [
           "nx-typecheck/*.md",
-          "LICENSE",
           {
             "input": "./nx-typecheck/src",
             "glob": "**/!(*.ts)",
