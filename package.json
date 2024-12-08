@@ -2,7 +2,10 @@
   "name": "@nx-typecheck/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+     "format": "nx format --all",
+    "format:check": "nx format --all --check"
+  },
   "private": true,
   "dependencies": {
     "@nx/devkit": "20.2.1"
