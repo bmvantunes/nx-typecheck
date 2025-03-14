@@ -84,7 +84,6 @@ function createTypecheckTarget(
       commands: siblingFiles
         .filter(
           (file) =>
-            file !== 'tsconfig.json' &&
             file.startsWith('tsconfig') &&
             file.endsWith('.json')
         )
